@@ -1,0 +1,23 @@
+{% extends "base.html" %} {% block content %}
+<div class="jumbotron">
+  <h2>Login</h2>
+  <form method="POST">
+    {{form.hidden_tag()}}
+    <div class="row">
+      <div class="col-sm-1">{{form.email.label}}</div>
+      <div class="col-sm-3">
+        {{form.email(class='form-control', placeholder = 'abc@gmail.com')}}
+      </div>
+    </div>
+    <br />
+    <div class="row">
+      <div class="col-sm-1">{{form.password.label}}</div>
+      <div class="col-sm-3">
+        {{form.password(class='form-control', placeholder = 'Your password')}}
+      </div>
+    </div>
+    <br />
+    {{form.submit(class = 'btn btn-success')}}
+  </form>
+</div>
+{% endblock %}

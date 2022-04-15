@@ -1,0 +1,27 @@
+{% extends "base.html" %} {% block content %}
+<div class="jumbotron">
+  <div class="container">
+    <h2 class="text-center">
+      Welcome to your account dashboard, {{username}}!
+    </h2>
+    <div class="row">
+      <img
+        align="center"
+        src="{{display_picture}}"
+        alt="profile pic"
+        class="mx-auto"
+      />
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-1">Username:</div>
+    <div class="col-sm-3">{{username}}</div>
+  </div>
+  <br />
+  <div class="row">
+    <div class="col-sm-1">Email:</div>
+    <div class="col-sm-3">{{email}}</div>
+  </div>
+</div>
+{% endblock %}
