@@ -4,3 +4,4 @@
 .env
 migrations
 data.sqlite
+venv
