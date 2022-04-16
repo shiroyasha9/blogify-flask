@@ -1,2 +1,5 @@
-python -m venv venv
-venv\Scripts\pip3 install -r requirements.txt
+pip install -r requirements.txt
+flask db init
+flask db migrate -m "fm"
+flask db upgrade
+code .
